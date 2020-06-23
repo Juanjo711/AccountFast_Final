@@ -1,0 +1,8 @@
+# Este archivo restringe el acceso a algunos archivos que no deben ser vistos por los usuarios 
+# y ademas se usa para manejar URLs amigables en el proyecto
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    public/paginas     [L]
+    RewriteRule    (.*) public/$1    [L]
+ </IfModule>

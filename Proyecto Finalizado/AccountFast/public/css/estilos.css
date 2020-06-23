@@ -1,0 +1,41 @@
+.banner, .login_img{
+    background-image: url('../img/banner.jpg'); 
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+}
+
+.login_img{
+    width: 101.7%;
+    height: 657px;
+}
+
+.texto{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 90%;
+}
+
+/* Hace rotar el logo del login */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+    to {
+		transform: rotate(360deg);
+	}
+}
+
+#logo_rot{
+    width: 70px;
+    height: 70px;
+    animation: 6s rotate linear infinite;
+	transform-origin: 50% 50%;
+	animation-direction: reverse;
+}
